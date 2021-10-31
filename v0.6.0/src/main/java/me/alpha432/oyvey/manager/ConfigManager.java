@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
 public class ConfigManager implements Util {
     public ArrayList<Feature> features = new ArrayList<>();
 
-    public String config = "Quantum/config/";
+    public String config = "Autism/config/";
 
     public static void setValueFromJson(Feature feature, Setting setting, JsonElement element) {
         String str;
@@ -83,11 +83,11 @@ public class ConfigManager implements Util {
     }
 
     public void loadConfig(String name) {
-        final List<File> files = Arrays.stream(Objects.requireNonNull(new File("Quantum").listFiles())).filter(File::isDirectory).collect(Collectors.toList());
+        final List<File> files = Arrays.stream(Objects.requireNonNull(new File("Autism").listFiles())).filter(File::isDirectory).collect(Collectors.toList());
         if (files.contains(new File("Quantum/" + name + "/"))) {
-            this.config = "Quantum/" + name + "/";
+            this.config = "Autism/" + name + "/";
         } else {
-            this.config = "Quantum/config/";
+            this.config = "Autism/config/";
         }
         OyVey.friendManager.onLoad();
         for (Feature feature : this.features) {
@@ -101,8 +101,8 @@ public class ConfigManager implements Util {
     }
 
     public boolean configExists(String name) {
-        final List<File> files = Arrays.stream(Objects.requireNonNull(new File("Quantum").listFiles())).filter(File::isDirectory).collect(Collectors.toList());
-        return files.contains(new File("Quantum/" + name + "/"));
+        final List<File> files = Arrays.stream(Objects.requireNonNull(new File("Autism").listFiles())).filter(File::isDirectory).collect(Collectors.toList());
+        return files.contains(new File("Autism/" + name + "/"));
     }
 
     public void saveConfig(String name) {
@@ -122,18 +122,18 @@ public class ConfigManager implements Util {
     }
 
     public void saveCurrentConfig() {
-        File currentConfig = new File("Quantum/currentconfig.txt");
+        File currentConfig = new File("Autism/currentconfig.txt");
         try {
             if (currentConfig.exists()) {
                 FileWriter writer = new FileWriter(currentConfig);
                 String tempConfig = this.config.replaceAll("/", "");
-                writer.write(tempConfig.replaceAll("Quantum", ""));
+                writer.write(tempConfig.replaceAll("Autism", ""));
                 writer.close();
             } else {
                 currentConfig.createNewFile();
                 FileWriter writer = new FileWriter(currentConfig);
                 String tempConfig = this.config.replaceAll("/", "");
-                writer.write(tempConfig.replaceAll("Quantum", ""));
+                writer.write(tempConfig.replaceAll("Autism", ""));
                 writer.close();
             }
         } catch (Exception e) {
