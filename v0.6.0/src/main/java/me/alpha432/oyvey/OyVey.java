@@ -9,12 +9,12 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.lwjgl.opengl.Display;
 
-@Mod(modid = "quantum", name = "Quantum", version = "0.6.0")
+@Mod(modid = "AutismWare", name = "Autism", version = "1.1.1")
 public class OyVey {
-    public static final String MODID = "quantum";
-    public static final String MODNAME = "Quantum";
-    public static final String MODVER = "0.6.0";
-    public static final Logger LOGGER = LogManager.getLogger("Quantum");
+    public static final String MODID = "Autismware";
+    public static final String MODNAME = "AutismWare";
+    public static final String MODVER = "1.1.1";
+    public static final Logger LOGGER = LogManager.getLogger("Autismware");
     public static TotemPopManager totemPopManager;
     public static TimerManager timerManager;
     public static CommandManager commandManager;
@@ -43,7 +43,7 @@ public class OyVey {
     }
 
     public static void load() {
-        LOGGER.info("\n\nLoading Quantum Continued");
+        LOGGER.info("\n\nLoading Autism");
         unloaded = false;
         if (reloadManager != null) {
             reloadManager.unload();
@@ -78,11 +78,11 @@ public class OyVey {
         if (moduleManager.getModuleByClass(RPC.class).isEnabled()) {
             DiscordPresence.start();
         }
-        LOGGER.info("Quantum Continued successfully loaded!\n");
+        LOGGER.info("AutismWare unloaded enjoy the last 30 mins left on your computer!\n");
     }
 
     public static void unload(boolean unload) {
-        LOGGER.info("\n\nUnloading Quantum continued");
+        LOGGER.info("\n\nUnloaded AutismWare");
         if (unload) {
             reloadManager = new ReloadManager();
             reloadManager.init(commandManager != null ? commandManager.getPrefix() : ".");
@@ -104,7 +104,7 @@ public class OyVey {
         inventoryManager = null;
         moduleManager = null;
         textManager = null;
-        LOGGER.info("Quantum unloaded!\n");
+        LOGGER.info("AutismWare\n");
     }
 
     public static void reload() {
@@ -116,7 +116,7 @@ public class OyVey {
         if (!unloaded) {
             eventManager.onUnload();
             moduleManager.onUnload();
-            configManager.saveConfig(OyVey.configManager.config.replaceFirst("Quantum/", ""));
+            configManager.saveConfig(OyVey.configManager.config.replaceFirst("Autismcompiled/", ""));
             moduleManager.onUnloadPost();
             unloaded = true;
         }
@@ -124,14 +124,14 @@ public class OyVey {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-        LOGGER.info("fart cum poo ass- derpyjibs");
-        LOGGER.info("Perry Phobos is super good. -perry (Strong 14 yr autistic furry).");
+        LOGGER.info("You drank gorilla glue as a child I can tell -Weaponizeautism");
+        LOGGER.info("Amrit1 is a fucking skid");
     }
 
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-        Display.setTitle("Quantum Continued v" + MODVER);
+        Display.setTitle("Autismware v" + MODVER);
 
         OyVey.load();
     }
