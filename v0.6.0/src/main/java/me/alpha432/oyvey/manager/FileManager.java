@@ -19,7 +19,7 @@ import java.util.stream.Stream;
 
 public class FileManager
         extends Feature {
-    private final Path base = this.getMkDirectory(this.getRoot(), "Quantum");
+    private final Path base = this.getMkDirectory(this.getRoot(), "Autism");
     private final Path config = this.getMkDirectory(this.base, "config");
 
     public FileManager() {
