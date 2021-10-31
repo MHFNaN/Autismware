@@ -1,18 +1,18 @@
 [
   {
-    "modid": "quantum",
-    "name": "Quantum",
-    "description": "client made for atomic bomb pvp",
-    "version": "0.5.2",
+    "modid": "Autism",
+    "name": "Autism",
+    "description": "AutismWare a client by Weaponizeautism the most autistic person on 0b0tree",
+    "version": "1.1.1",
     "mcversion": "1.12.2",
     "logoFile": "Quantum.png",
     "url": "",
     "updateUrl": "",
     "authorList": [
-      "derpyjibs",
-      "ProfKambing",
-      "noatmc",
-      "perry"
+      "Autism",
+      "Autism",
+      "Autism",
+      "Weaponizeautism"
     ],
     "screenshots": [],
     "dependencies": []
