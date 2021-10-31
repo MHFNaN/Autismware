@@ -2,7 +2,7 @@
   "required": true,
   "compatibilityLevel": "JAVA_8",
   "package": "me.alpha432.oyvey.mixin.mixins",
-  "refmap": "mixins.quantum.refmap.json",
+  "refmap": "mixins.autism.refmap.json",
   "mixins": [
     "MixinBlock",
     "MixinBlockFluidRenderer",
