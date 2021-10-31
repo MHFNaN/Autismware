@@ -34,7 +34,7 @@ public class CSGOWatermark extends Module {
 
     public void drawCsgoWatermark() {
         int padding = 5;
-        message = "Quantum Continued v0.6.0 | " + mc.player.getName() + " | " + OyVey.serverManager.getPing() + "ms";
+        message = "AutismWare v1.1.1 | " + mc.player.getName() + " | " + OyVey.serverManager.getPing() + "ms";
         Integer textWidth = mc.fontRenderer.getStringWidth(message); // taken from wurst+ 3
         Integer textHeight = mc.fontRenderer.FONT_HEIGHT; // taken from wurst+ 3
         RenderUtil.drawRectangleCorrectly(X.getValue() - 4, Y.getValue() - 4, textWidth + 16, textHeight + 12, ColorUtil.toRGBA(22, 22, 22, 255));
