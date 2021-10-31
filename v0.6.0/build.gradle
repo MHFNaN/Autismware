@@ -35,7 +35,7 @@ minecraft {
     version = project.forgeVersion
     runDir = 'run'
     mappings = project.mcpVersion
-    coreMod = 'me.alpha432.oyvey.mixin.QuantumLoader'
+    coreMod = 'me.alpha432.oyvey.mixin.AutismLoader'
     makeObfSourceJar = false
 }
 
@@ -118,13 +118,13 @@ reobf {
 jar {
     manifest {
         attributes(
-                'MixinConfigs': 'mixins.quantum.json',
+                'MixinConfigs': 'mixins.autism.json',
                 'tweakClass': 'org.spongepowered.asm.launch.MixinTweaker',
                 'TweakOrder': 0,
                 'FMLCorePluginContainsFMLMod': 'true',
-                'FMLCorePlugin': 'me.alpha432.oyvey.mixin.QuantumLoader',
+                'FMLCorePlugin': 'me.alpha432.oyvey.mixin.AutismLoader',
                 'ForceLoadAsMod': 'true',
-                'FMLAT': 'quantum_at.cfg'
+                'FMLAT': 'autism_at.cfg'
         )
     }
 }
