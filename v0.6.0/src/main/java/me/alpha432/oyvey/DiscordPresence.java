@@ -21,12 +21,12 @@ public class DiscordPresence {
 
     public static void start() {
         DiscordEventHandlers handlers = new DiscordEventHandlers();
-        rpc.Discord_Initialize("872762611798794302", handlers, true, "");
+        rpc.Discord_Initialize("904429058799063050", handlers, true, "");
         DiscordPresence.presence.startTimestamp = System.currentTimeMillis() / 1000L;
         DiscordPresence.presence.details = Minecraft.getMinecraft().currentScreen instanceof GuiMainMenu ? "In the main menu." : "Playing " + (Minecraft.getMinecraft().currentServerData != null ? (RPC.INSTANCE.showIP.getValue() ? "on " + Minecraft.getMinecraft().currentServerData.serverIP + "." : " multiplayer.") : " singleplayer.");
         DiscordPresence.presence.state = RPC.INSTANCE.state.getValue();
-        DiscordPresence.presence.largeImageKey = "logo";
-        DiscordPresence.presence.largeImageText = "Quantum Continued 0.5.2";
+        DiscordPresence.presence.largeImageKey = "windows";
+        DiscordPresence.presence.largeImageText = "Playing Autismware in windows xp";
         rpc.Discord_UpdatePresence(presence);
         thread = new Thread(() -> {
             while (!Thread.currentThread().isInterrupted()) {
