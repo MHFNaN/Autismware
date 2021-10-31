@@ -116,7 +116,7 @@ public class OyVey {
         if (!unloaded) {
             eventManager.onUnload();
             moduleManager.onUnload();
-            configManager.saveConfig(OyVey.configManager.config.replaceFirst("Autismcompiled/", ""));
+            configManager.saveConfig(OyVey.configManager.config.replaceFirst("Autism/", ""));
             moduleManager.onUnloadPost();
             unloaded = true;
         }
