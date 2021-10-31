@@ -14,7 +14,7 @@ public class QuantumLoader
     public QuantumLoader() {
         OyVey.LOGGER.info("\n\nLoading mixins by Alpha432");
         MixinBootstrap.init();
-        Mixins.addConfiguration("mixins.quantum.json");
+        Mixins.addConfiguration("mixins.autism.json");
         MixinEnvironment.getDefaultEnvironment().setObfuscationContext("searge");
         OyVey.LOGGER.info(MixinEnvironment.getDefaultEnvironment().getObfuscationContext());
     }
