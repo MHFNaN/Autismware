@@ -16,7 +16,7 @@ import java.awt.*;
 public class ClickGui
         extends Module {
     private static ClickGui INSTANCE = new ClickGui();
-    public Setting<String> prefix = this.register(new Setting<>("Prefix", "."));
+    public Setting<String> prefix = this.register(new Setting<>("Prefix", "$"));
     public Setting<Boolean> customFov = this.register(new Setting<>("CustomFov", false));
     public Setting<Boolean> snowing = this.register(new Setting<>("Snowing", true));
     public Setting<Boolean> rainbowRolling = this.register(new Setting<>("Rolling rainbow", true));
